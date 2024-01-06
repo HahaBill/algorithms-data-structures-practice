@@ -2,11 +2,10 @@ from typing import Optional, List
 
 class Vertex(object):
 
-    def __init__(self, vertex_id: int, value: int, to: "Optional[List[Vertex]]", previous: "Optional[Vertex]") -> None:
+    def __init__(self, vertex_id: int, value: int, neighbours: "Optional[List[Vertex]]") -> None:
         self._vertex_id = vertex_id
         self.value = value 
-        self.to = to 
-        self.previous = previous
+        self.neighbours = neighbours
 
     @property
     def vertex_id(self) -> int:

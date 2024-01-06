@@ -7,7 +7,7 @@ using test frameworks (PyTest and Jest).
 
 - Implementing a Graph and Vertices from scratch
 - Creating a parser that takes .txt (a map) as an input and outputs a graph
-- Graph Algorithms (DFS, BFS, A\*, Topological Sort, etc.)
+- Graph Algorithms (DFS, BFS, Dijsktra algortihm, Kruskal Algorithm A\*, Topological Sort, etc.)
 
 ## Trees
 

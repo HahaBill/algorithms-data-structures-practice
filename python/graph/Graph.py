@@ -1,11 +1,11 @@
 from typing import Optional, List, Dict, Tuple, Set
-from Vertex import Vertex
+from .Vertex import Vertex
 
 class Graph(object):
 
     def __init__(self, graph_dict: Optional[Dict[Vertex, List[Vertex]]] = None) -> None:
-        self.num_vertices = None
-        self.num_edges = None
+        self.num_vertices = 0
+        self.num_edges = 0
 
         if graph_dict == None:
             graph_dict = {}
@@ -44,6 +44,7 @@ class Graph(object):
             self.num_vertices += 1
         else:
             raise Exception(f"Vertex {vertex.vertex_id} is already in the graph!")
+        return self
         
     def generateAllEdges(self) -> List[Set[Vertex]]:
         edges = []
@@ -53,7 +54,7 @@ class Graph(object):
                     edges.append({currVertex, neighbour})
         return edges
 
-    def generateAllDirectedEdges(self) -> List[Tuple(Vertex, Vertex)]:
+    def generateAllDirectedEdges(self) -> List[Tuple[Vertex, Vertex]]:
         pass
 
         

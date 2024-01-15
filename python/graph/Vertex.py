@@ -2,7 +2,7 @@ from typing import Optional, List
 
 class Vertex(object):
 
-    def __init__(self, vertex_id: int, value: int, neighbours: "Optional[List[Vertex]]") -> None:
+    def __init__(self, vertex_id: int, value: int, neighbours: "Optional[List[Vertex]]" = None) -> None:
         self._vertex_id = vertex_id
         self.value = value 
         self.neighbours = neighbours
